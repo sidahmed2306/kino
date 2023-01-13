@@ -7,7 +7,7 @@ const { MongoClient } = require("mongodb");
 dotenv.config();
 
 const url = process.env.MONGO_URL;
-const dbName = "first-data-09-01-2023";
+const dbName = process.env.MONGO_DB_NAME || "first-data-09-01-2023";
 const GMAIL_ADRESS = process.env.GMAIL_ADRESS;
 const CLIENT_ID = process.env.GMAIL_CLIENT_ID;
 const CLIENT_SECRET = process.env.GMAIL_CLIENT_SECRET;
